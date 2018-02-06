@@ -1,0 +1,22 @@
+1.160409
+(1)完成验证登录的mvc
+login2.jsp
+LoginServlet2.java
+   将mysql-connector-java.jar放到lib下
+<1>查询输入的用户名在数据库中的密码
+<2>若密码正确.将用户名放入session对象.然后转发到登录界面
+<3>若密码错误.提示密码错误.跳转到登录界面
+<4>若用户名错误.即不存在.提示用户不存在.跳转到登录界面
+DbDao.java可以复用
+welcome.jsp显示成功登录页面
+
+(2)自定义表达式
+HelloWorldTag.java:自定义标签处理类
+mytaglib.tld:放在src下. 标签库定义文件
+helloWorldTag.jsp:使用自定义标签
+
+(3)EL表达式
+
+(4)TestPrintServlet
+在service方法中输出网页
+
